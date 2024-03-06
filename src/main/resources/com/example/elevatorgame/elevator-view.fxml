@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="601.0" prefWidth="514.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.elevatorgame.ElevatorController">
+   <children>
+      <ImageView fitHeight="614.0" fitWidth="514.0" layoutY="-10.0" pickOnBounds="true">
+         <image>
+            <Image url="@elevatorImage.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="upButton" layoutX="428.0" layoutY="239.0" mnemonicParsing="false" onAction="#up" prefHeight="31.0" prefWidth="62.0" text="    UP    " textFill="#2d5e1e" />
+      <Button fx:id="downButton" layoutX="428.0" layoutY="285.0" mnemonicParsing="false" onAction="#down" prefHeight="31.0" prefWidth="62.0" text="DOWN" textFill="#9e1515" />
+      <Label fx:id="promptLabel" layoutX="274.0" layoutY="410.0" prefHeight="123.0" prefWidth="234.0" text="Welcome! Enter the people's information to get in the dragon elevator!" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Apple Chancery" size="14.0" />
+         </font></Label>
+      <Button fx:id="enterButton" layoutX="436.0" layoutY="560.0" mnemonicParsing="false" onAction="#enter" text="Enter" textFill="#121fb2" />
+      <TextField fx:id="nameText" layoutX="295.0" layoutY="533.0" prefHeight="24.0" prefWidth="187.0" promptText="name" />
+      <TextField fx:id="targetFloorText" layoutX="295.0" layoutY="560.0" prefHeight="24.0" prefWidth="112.0" promptText="target floor" />
+      <Label fx:id="floorLabel" layoutX="273.0" layoutY="97.0" prefHeight="40.0" prefWidth="134.0" text="Floor: 1" textFill="#d3b4b4" />
+      <Label fx:id="infoLabel" layoutX="273.0" layoutY="5.0" prefHeight="106.0" prefWidth="234.0" text="HINT: Add persons quickly! Go to last person's target floor with buttons and collect the points! So you can open the princess's doors!" textFill="WHITE" wrapText="true" />
+      <Label fx:id="numberOfPeopleLabel" layoutX="273.0" layoutY="117.0" prefHeight="40.0" prefWidth="134.0" text="Number Of People: 1" textFill="#bc7d7d" />
+      <Label fx:id="nameOfLastPersonLabel" layoutX="274.0" layoutY="142.0" prefHeight="31.0" prefWidth="162.0" text="Name of Last Person:" textFill="#652525" />
+      <ImageView fx:id="elevator" fitHeight="72.0" fitWidth="94.0" layoutX="144.0" layoutY="356.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@dragon.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="travelMeterLabel" layoutX="18.0" layoutY="50.0" prefHeight="3.0" prefWidth="187.0" text="Travel Meter:0" textFill="WHITE">
+         <font>
+            <Font name="Ayuthaya" size="12.0" />
+         </font></Label>
+      <Label fx:id="pointLabel" layoutX="18.0" layoutY="14.0" prefHeight="24.0" prefWidth="176.0" text="Points: 0" textFill="WHITE">
+         <font>
+            <Font name="Ayuthaya" size="12.0" />
+         </font></Label>
+   </children>
+</AnchorPane>
